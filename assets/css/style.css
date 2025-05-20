@@ -8,8 +8,8 @@ body {
 
 
 .chapter {
-  height: 100vh;
   padding: 80px 10vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,9 +17,11 @@ body {
   background: linear-gradient(to bottom, #121212, #1a1a1a);
 }
 
+
 .chapter h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .chapter p {
@@ -33,6 +35,9 @@ html {
   overflow-y: scroll;
 }
 
+section.h1 {
+  text-align: center;
+}
 
 
 /* NAV */
@@ -117,9 +122,9 @@ html {
 
 .project-content {
   display: flex;
-  gap: 40px;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -192,4 +197,8 @@ html {
 
 .contact-form button:hover {
   background: #00aacc;
+}
+
+.project-content.reverse {
+  flex-direction: row-reverse;
 }
