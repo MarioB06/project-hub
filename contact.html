@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Project Hub</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script src="/assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <div data-include="/includes/nav.html"></div>
+
+  <section class="chapter" id="contact">
+    <h1>Kontakt</h1>
+    <p style="max-width: 700px; font-size: 1.2rem; line-height: 1.7;">
+      Du hast Fragen, Feedback oder möchtest mit uns zusammenarbeiten? Schreib uns direkt – wir freuen uns!
+    </p>
+
+    <form action="https://formspree.io/f/mwpozrpy" method="POST" class="contact-form">
+      <label>
+        Dein Name
+      </label>
+      <input type="text" name="name" required>
+
+      <label>
+        Deine E-Mail
+      </label>
+      <input type="email" name="_replyto" required>
+
+      <label>
+        Nachricht
+      </label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+  </section>
+
+  <div data-include="/includes/footer.html"></div>
+</body>
+
+</html>
